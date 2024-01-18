@@ -1,0 +1,27 @@
+@import "./utils/variables";
+
+@import "./base/reset", "./base/typography";
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        color: $colorPrimary;
+        background-color: $colorSecondary;
+
+        .app-header {
+            a {
+                padding: 0.5rem;
+                color: red;
+
+                &:hover {
+                    color: blue;
+                }
+
+                &.active {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
